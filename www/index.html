@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="components/loader.js"></script>
+    <script src="js/ncmb.min.js"></script>
+    <script src="js/app.js">
+    </script>
+</head>
+<body>
+    <form name="FNameDate">
+    日付：<input type="text" name="txtDate" value=""><br>
+    </form>
+        <div>
+            <script type="text/javascript">
+            </script>
+        </div>
+
+    
+
+    <table class="sample_01" id="TBL">
+    <tbody>
+    
+    <tr>
+    <th colspan="3">会員名</th>
+    <th colspan="2">ID</th>
+    <th style="background-color:#fff;" onclick="click_serve()">サーブ</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>7</th>
+    <th>スコア</th>
+    </tr>
+    <tr>
+    <td colspan="3" onclick="Click_Name(this)"></td><td colspan="2" onclick="Click_ID(this)"></td><td onclick="chg_serve_turn(ROW_MEM_1st)">1</td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td rowspan="3"></td>
+    </tr>
+    <tr>
+    <td colspan="3" onclick="Click_Name(this)"></td><td colspan="2" onclick="Click_ID(this)"></td><td onclick="chg_serve_turn(ROW_MEM_2nd)">3</td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td>
+    </tr>
+    <tr>
+    <td colspan="6">ゲーム</td><td onclick="Click_GameResult(this)"></td><td onclick="Click_GameResult(this)"></td><td onclick="Click_GameResult(this)"></td><td onclick="Click_GameResult(this)"></td><td onclick="Click_GameResult(this)"></td><td onclick="Click_GameResult(this)"></td><td onclick="Click_GameResult(this)"></td>
+    </tr>
+    <tr>
+    <td colspan="6">ゲーム</td><td onclick="Click_GameResult(this)"></td><td onclick="Click_GameResult(this)"></td><td onclick="Click_GameResult(this)"></td><td onclick="Click_GameResult(this)"></td><td onclick="Click_GameResult(this)"></td><td onclick="Click_GameResult(this)"></td><td onclick="Click_GameResult(this)"></td><td rowspan="3"></td>
+    </tr>
+    <tr>
+    <td colspan="3" onclick="Click_Name(this)"></td><td colspan="2" onclick="Click_ID(this)"></td><td onclick="chg_serve_turn(ROW_MEM_3rd)">2</td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td>
+    </tr>
+    <tr>
+    <td colspan="3" onclick="Click_Name(this)"></td><td colspan="2" onclick="Click_ID(this)"></td><td onclick="chg_serve_turn(ROW_MEM_4th)">4</td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td><td onclick="Click_ServeResult(this)"></td>
+    </tr>
+
+    </tbody>
+    </table>
+    <form name="chbox">
+        <div>
+            <input id="tieBreak" type="checkbox" onclick="chkbox_tieBreak()" >タイブレーク<br>
+        </div>
+    </form>
+    <div>
+        <button class="update-button" onclick="score_update()">UPDATE</button>
+    </div>
+
+    <!--<div>
+        <button class="csvCreate-button" onclick="csv_create()">CSV</button>
+    </div> -->
+    <div>
+        <button class="prvDt-button" onclick="get_prv_data()">前回のデータ </button>
+    </div>
+    <div>
+        <button class="clear-button" onclick="all_clear()">ALL CLEAR </button>
+    </div>
+
+    
+</body>
+</html>
